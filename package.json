@@ -1,12 +1,17 @@
 {
-  "name": "nextjs-template",
-  "version": "0.1.0",
+  "name": "@aelpxy/nextjs-template",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf node_modules && rm -rf out",
+    "clean:node": "rm -rf node_modules",
+    "clean:build": "rm -rf out",
+    "format": "prettier --write ./"
   },
   "dependencies": {
     "next": "12.2.5",
@@ -14,7 +19,15 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "prettier": "^2.7.1",
+    "autoprefixer": "^10.4.8",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.2"
   }
 }
