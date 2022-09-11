@@ -6,32 +6,27 @@ import HelloWorld from "../components/HelloWorld";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className={"container"}>
       <Head>
-        <title>Next.js + TypeScript + TailwindCSS</title>
+        <title>Next.js + TS</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div>
+
+      <main className={"main"}>
         <HelloWorld />
-        <div>
-          <div className="flex flex-col space-y-4 m-20">
-            <p className="text-lg text-center">Get started by</p>
-            <span className="font-mono text-center">
-              npx degit aelpxy/nextjs-template
-            </span>
-          </div>
-          <div className="flex flex-col space-y-4 m-20">
-            <p className="text-lg text-center mb-15">Deployed on</p>
-            <Image
-              src={"/vercel.svg"}
-              alt={"Vercel"}
-              loading={"lazy"}
-              width={"100px"}
-              height={"100px"}
-            />
-          </div>
-        </div>
-      </div>
+        <p className={"description"}>
+          <code className={"code"}>npx degit aelpxy/nextjs-template</code>
+        </p>
+      </main>
+
+      <footer className={"footer"}>
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+          Powered by{" "}
+          <span className={"logo"}>
+            <Image src="/vercel.svg" alt="Logo" width={72} height={16} />
+          </span>
+        </a>
+      </footer>
     </div>
   );
 };
