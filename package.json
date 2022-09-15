@@ -1,5 +1,5 @@
 {
-  "name": "@aelpxy/nextjs-template",
+  "name": "next-starter-ts",
   "version": "1.0.0",
   "private": true,
   "scripts": {
