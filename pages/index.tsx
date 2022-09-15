@@ -15,7 +15,9 @@ const Home: NextPage = () => {
       <main className={"main"}>
         <HelloWorld />
         <p className={"description"}>
-          <code className={"code"}>npx degit aelpxy/nextjs-template</code>
+          <code className={"code"}>
+            npx degit aelpxy/next-starter-ts
+          </code>
         </p>
       </main>
 
