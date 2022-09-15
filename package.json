@@ -8,10 +8,11 @@
     "build:static": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rm -rf node_modules && rm -rf out",
+    "format": "prettier --write ./",
+    "clean": "rm -rf node_modules && rm -rf out && rm -rf .next",
     "clean:node": "rm -rf node_modules",
     "clean:build": "rm -rf out",
-    "format": "prettier --write ./"
+    "clean:cache": "rm -rf .next"
   },
   "dependencies": {
     "next": "12.3.0",
