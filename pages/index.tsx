@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={"container"}>
       <Head>
-        <title>Next.js + TS</title>
+        <title>next-starter-ts</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
