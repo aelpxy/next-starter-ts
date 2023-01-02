@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
+            Powered by{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -44,13 +44,7 @@ const Home: NextPage = () => {
           priority
         />
         <div className={"thirteen"}>
-          <Image
-            src="/thirteen.svg"
-            alt="13"
-            width={40}
-            height={31}
-            priority
-          />
+          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
         </div>
       </div>
       <Cards />
