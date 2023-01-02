@@ -1,33 +1,60 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
-import HelloWorld from "../components/HelloWorld";
+import Cards from "../components/Cards";
 
 const Home: NextPage = () => {
   return (
-    <div className={"container"}>
+    <main className={"main"}>
       <Head>
         <title>next-starter-ts</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
-      <main className={"main"}>
-        <HelloWorld />
-        <p className={"description"}>
+      <div className={"description"}>
+        <p>
           <code className={"code"}>npx degit aelpxy/next-starter-ts</code>
         </p>
-      </main>
+        <div>
+          <Link
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by{' '}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={"vercelLogo"}
+              width={100}
+              height={24}
+              priority
+            />
+          </Link>
+        </div>
+      </div>
 
-      <footer className={"footer"}>
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          Powered by{" "}
-          <span className={"logo"}>
-            <Image src="/vercel.svg" alt="Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <div className={"center"}>
+        <Image
+          className={"logo"}
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+        <div className={"thirteen"}>
+          <Image
+            src="/thirteen.svg"
+            alt="13"
+            width={40}
+            height={31}
+            priority
+          />
+        </div>
+      </div>
+      <Cards />
+    </main>
   );
 };
 
