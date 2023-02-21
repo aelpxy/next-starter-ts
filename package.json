@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write ./",
-    "clean": "rm -rf node_modules && rm -rf out && rm -rf .next",
+    "clean": "rm -rf node_modules out .next",
     "clean:node": "rm -rf node_modules",
     "clean:build": "rm -rf out",
     "clean:cache": "rm -rf .next"
