@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import Cards from "../components/Cards";
+import Code from "../components/Code";
 
 const Home: NextPage = () => {
   return (
@@ -11,43 +11,14 @@ const Home: NextPage = () => {
       <Head>
         <title>next-starter-ts</title>
       </Head>
-      <div className={"description"}>
-        <p>
-          <code className={"code"}>npx degit aelpxy/next-starter-ts</code>
-        </p>
-        <div>
-          <Link
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={"vercelLogo"}
-              width={100}
-              height={24}
-              priority
-            />
-          </Link>
+      <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="flex items-center justify-between space-x-4">
+          <Code className="text-3xl font-bold border rounded bg-gray-100">
+            <span className={"select-none"}>~$ </span>
+            npx degit aelpxy/next-starter-ts
+          </Code>
         </div>
       </div>
-
-      <div className={"center"}>
-        <Image
-          className={"logo"}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={"thirteen"}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-      <Cards />
     </main>
   );
 };
